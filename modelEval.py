@@ -43,7 +43,7 @@ def eval(GALAXY_flux, QSO_flux, STAR_flux, epochs):
         print("#####################################epoch:" + str(epoch + 1))
         ##    train carbon
         train_loader = torch.utils.data.DataLoader(dataset=train_dataset,
-                                             batch_size=32,
+                                             batch_size=64,
                                              shuffle=True,
                                              drop_last=True)  # 丢弃最后一个batch, 避免模型震荡
 
@@ -78,10 +78,10 @@ def eval(GALAXY_flux, QSO_flux, STAR_flux, epochs):
 
         overall_accuracy = accuracy_score(all_y_true, all_y_pred)
         # 计算整体的正确率
-        print("Overall Accuracy: {:.2f}".format(overall_accuracy))
+        print("Overall Accuracy: {:.4f}".format(overall_accuracy))
         # 计算召回率
         recall = recall_score(all_y_true, all_y_pred)
-        print("Overall Recall: {:.2f}".format(recall))
+        print("Overall Recall: {:.4f}".format(recall))
         acc.append(overall_accuracy)
         rec.append(recall)
 
