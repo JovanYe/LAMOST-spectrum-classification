@@ -14,9 +14,9 @@ class Model(torch.nn.Module):
     def __init__(self):
         super(Model, self).__init__()
         self.embedding_size = 1  # 输入维数
-        self.feature_size1 = 16  # 所含卷积核个数
-        self.feature_size2 = 32  # 所含卷积核个数
-        self.feature_size3 = 16  # 所含卷积核个数
+        self.feature_size1 = 32  # 所含卷积核个数
+        self.feature_size2 = 64  # 所含卷积核个数
+        self.feature_size3 = 32  # 所含卷积核个数
         self.max_len = 3000  # 数据点个数
         self.k_size = 49    #提取中等大小特征
         self.maxPooling_size = 3  # 下采样尺寸
