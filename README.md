@@ -8,7 +8,6 @@ On the task of classifying LAMOST DR9 spectra, including the three classes of 'G
 
 第6个epoch的混淆矩阵如下：
 ![epoch6](https://github.com/JovanYe/LAMOST-spectrum-classification/assets/162402413/81d4327e-455a-4316-9e79-57a80503e115)
-样本量较少的类星体也获得了出色的准确率
 
 
 训练过程中损失如下：
